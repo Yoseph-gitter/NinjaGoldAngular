@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+  <div>
+    <div> 
+        <label class="totallabel">Total Gold Earned : </label>
+        <input class="total_gold" type="text"  value="{{ totalGoldValue }}" (ninjaDataChange)="getDataFromChild($event)" >
+       <form (submit)="registerUser()" class="ninjaForm"> 
+        <label for="ninjaName" style="margin-left: 10px" class="totallabel">Name :</label>  
+        <input type="text" id="ninjaName"  class="ninjaRegestration">
+        <input type="submit" value="Regester to Play" style="margin-right: 10px">
+      </form>
+    </div>
+
+    <ninja-play-ground *ngFor="let play of ninjaData" [ninjaInfo]="play"  class="ninja_comp" (ninjaDataChange)="getDataFromChild($event)">
+    </ninja-play-ground>
+
+    <div  class="message">
+      <app-ninja-activity *ngFor="let history of ninjaMessages" [ninjaInfoHistory]="history" (ninjaDataChange)="getDataFromChild($event)">
+      </app-ninja-activity>
+    </div>
+  </div>
+  
+ 
+
+

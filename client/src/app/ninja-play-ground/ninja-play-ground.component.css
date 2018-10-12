@@ -1,0 +1,33 @@
+
+input {
+    display: block;
+    height: 30px;
+    width: 70px;
+    border-radius: 13px;
+    background: gray;
+    margin: 10px auto;
+}
+
+.play_ground{
+    width: 100%;
+    min-height: 100px;
+    border: solid gray 3px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.total_Gold{
+    margin: 0px auto;
+    width: 100%;
+}
+.total_Gold input, label{
+    margin: 3% auto;
+    min-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    text-align: center;
+    font-weight: bold;
+}

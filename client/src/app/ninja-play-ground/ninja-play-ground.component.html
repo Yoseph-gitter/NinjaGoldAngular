@@ -1,0 +1,14 @@
+
+<!-- <div class="total_Gold" > 
+    <input type="text"  value="{{ totalGold }}">
+    <label>Total Gold Earned : </label>
+</div> -->
+
+
+<div class="play_ground" >
+    <h3>Ninja On {{ ninjaInfo.name }} !</h3>
+     <span style="color: hsl(43, 74%, 49%)"> Earns  {{ ninjaInfo.goldValue }} Gold </span>
+     <input type="button" (click)="getSomeGold(ninjaInfo.name)" value={{ninjaInfo.name}}>
+</div>
+
+
