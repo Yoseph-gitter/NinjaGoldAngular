@@ -11,3 +11,6 @@ Here , we used @Input and @output decorators to pass around ninja gold informati
 There is also this root-component that encapsulates both components.
 
 Next pase of this learning project is : making it such that it can be played for multiple users.
+
+Below is the screenshot of the app as the Ninja playes with its activity.
+
